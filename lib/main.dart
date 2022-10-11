@@ -10,7 +10,7 @@ void main() {
   runApp(ChangeNotifierProvider(
     create: (_) => CurrentPage(),
     child: MaterialApp(
-      title: 'Custom Nab Bar',
+      title: 'Custom Nav Bar',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.blue,
@@ -22,8 +22,6 @@ void main() {
 
 class AppMainWidget extends StatelessWidget {
   AppMainWidget({super.key});
-
-  final String title = 'Custom Nav Bar';
 
   List appScreens = [
     const HomePage(),
